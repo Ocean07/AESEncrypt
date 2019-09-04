@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C4AD9BB22293BD200BF9E8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9BA22293BD200BF9E8B /* AppDelegate.swift */; };
+		6C4AD9BD22293BD200BF9E8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9BC22293BD200BF9E8B /* ViewController.swift */; };
+		6C4AD9C022293BD200BF9E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C4AD9BE22293BD200BF9E8B /* Main.storyboard */; };
+		6C4AD9C222293BD300BF9E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C4AD9C122293BD300BF9E8B /* Assets.xcassets */; };
+		6C4AD9C522293BD300BF9E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C4AD9C322293BD300BF9E8B /* LaunchScreen.storyboard */; };
+		6C4ADA1D22293BE300BF9E8B /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9CD22293BE300BF9E8B /* AES.swift */; };
+		6C4ADA1E22293BE300BF9E8B /* StreamDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9CE22293BE300BF9E8B /* StreamDecryptor.swift */; };
+		6C4ADA1F22293BE300BF9E8B /* BlockEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9CF22293BE300BF9E8B /* BlockEncryptor.swift */; };
+		6C4ADA2022293BE300BF9E8B /* UInt64+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9D022293BE300BF9E8B /* UInt64+Extension.swift */; };
+		6C4ADA2122293BE300BF9E8B /* Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9D122293BE300BF9E8B /* Cryptors.swift */; };
+		6C4ADA2222293BE300BF9E8B /* HKDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9D222293BE300BF9E8B /* HKDF.swift */; };
+		6C4ADA2322293BE300BF9E8B /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9D322293BE300BF9E8B /* Cipher.swift */; };
+		6C4ADA2422293BE300BF9E8B /* AEADChaCha20Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9D522293BE300BF9E8B /* AEADChaCha20Poly1305.swift */; };
+		6C4ADA2522293BE300BF9E8B /* AEAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9D622293BE300BF9E8B /* AEAD.swift */; };
+		6C4ADA2622293BE300BF9E8B /* CBCMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9D722293BE300BF9E8B /* CBCMAC.swift */; };
+		6C4ADA2722293BE300BF9E8B /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9D822293BE300BF9E8B /* Int+Extension.swift */; };
+		6C4ADA2822293BE300BF9E8B /* AES.Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9D922293BE300BF9E8B /* AES.Cryptors.swift */; };
+		6C4ADA2922293BE300BF9E8B /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9DA22293BE300BF9E8B /* Bit.swift */; };
+		6C4ADA2A22293BE300BF9E8B /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9DB22293BE300BF9E8B /* HMAC.swift */; };
+		6C4ADA2B22293BE300BF9E8B /* CMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9DC22293BE300BF9E8B /* CMAC.swift */; };
+		6C4ADA2C22293BE300BF9E8B /* UInt16+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9DD22293BE300BF9E8B /* UInt16+Extension.swift */; };
+		6C4ADA2D22293BE300BF9E8B /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9DE22293BE300BF9E8B /* Collection+Extension.swift */; };
+		6C4ADA2E22293BE300BF9E8B /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9DF22293BE300BF9E8B /* UInt32+Extension.swift */; };
+		6C4ADA2F22293BE300BF9E8B /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9E022293BE300BF9E8B /* Digest.swift */; };
+		6C4ADA3022293BE300BF9E8B /* UInt128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9E122293BE300BF9E8B /* UInt128.swift */; };
+		6C4ADA3122293BE300BF9E8B /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9E222293BE300BF9E8B /* Scrypt.swift */; };
+		6C4ADA3222293BE300BF9E8B /* NoPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9E322293BE300BF9E8B /* NoPadding.swift */; };
+		6C4ADA3322293BE300BF9E8B /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9E522293BE300BF9E8B /* String+FoundationExtension.swift */; };
+		6C4ADA3422293BE300BF9E8B /* Blowfish+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9E622293BE300BF9E8B /* Blowfish+Foundation.swift */; };
+		6C4ADA3522293BE300BF9E8B /* Utils+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9E722293BE300BF9E8B /* Utils+Foundation.swift */; };
+		6C4ADA3622293BE300BF9E8B /* HMAC+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9E822293BE300BF9E8B /* HMAC+Foundation.swift */; };
+		6C4ADA3722293BE300BF9E8B /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9E922293BE300BF9E8B /* Data+Extension.swift */; };
+		6C4ADA3822293BE300BF9E8B /* ChaCha20+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9EA22293BE300BF9E8B /* ChaCha20+Foundation.swift */; };
+		6C4ADA3922293BE300BF9E8B /* Array+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9EB22293BE300BF9E8B /* Array+Foundation.swift */; };
+		6C4ADA3A22293BE300BF9E8B /* AES+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9EC22293BE300BF9E8B /* AES+Foundation.swift */; };
+		6C4ADA3B22293BE300BF9E8B /* Rabbit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9ED22293BE300BF9E8B /* Rabbit+Foundation.swift */; };
+		6C4ADA3C22293BE300BF9E8B /* UInt8+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9EE22293BE300BF9E8B /* UInt8+Extension.swift */; };
+		6C4ADA3D22293BE300BF9E8B /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9EF22293BE300BF9E8B /* MD5.swift */; };
+		6C4ADA3E22293BE300BF9E8B /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9F022293BE300BF9E8B /* Cryptor.swift */; };
+		6C4ADA3F22293BE300BF9E8B /* CompactMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9F122293BE300BF9E8B /* CompactMap.swift */; };
+		6C4ADA4022293BE300BF9E8B /* BatchedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9F222293BE300BF9E8B /* BatchedCollection.swift */; };
+		6C4ADA4122293BE300BF9E8B /* SecureBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9F322293BE300BF9E8B /* SecureBytes.swift */; };
+		6C4ADA4222293BE300BF9E8B /* ZeroPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9F422293BE300BF9E8B /* ZeroPadding.swift */; };
+		6C4ADA4322293BE300BF9E8B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9F522293BE300BF9E8B /* String+Extension.swift */; };
+		6C4ADA4422293BE300BF9E8B /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9F622293BE300BF9E8B /* Authenticator.swift */; };
+		6C4ADA4522293BE300BF9E8B /* SHA3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9F722293BE300BF9E8B /* SHA3.swift */; };
+		6C4ADA4622293BE300BF9E8B /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9F822293BE300BF9E8B /* Operators.swift */; };
+		6C4ADA4722293BE300BF9E8B /* RandomBytesSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9F922293BE300BF9E8B /* RandomBytesSequence.swift */; };
+		6C4ADA4822293BE300BF9E8B /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9FA22293BE300BF9E8B /* Rabbit.swift */; };
+		6C4ADA4922293BE300BF9E8B /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9FB22293BE300BF9E8B /* SHA1.swift */; };
+		6C4ADA4A22293BE300BF9E8B /* Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9FC22293BE300BF9E8B /* Poly1305.swift */; };
+		6C4ADA4B22293BE300BF9E8B /* BlockCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9FD22293BE300BF9E8B /* BlockCipher.swift */; };
+		6C4ADA4C22293BE300BF9E8B /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9FE22293BE300BF9E8B /* Updatable.swift */; };
+		6C4ADA4D22293BE300BF9E8B /* Blowfish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4AD9FF22293BE300BF9E8B /* Blowfish.swift */; };
+		6C4ADA4E22293BE300BF9E8B /* BlockDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0022293BE300BF9E8B /* BlockDecryptor.swift */; };
+		6C4ADA4F22293BE300BF9E8B /* StreamEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0122293BE300BF9E8B /* StreamEncryptor.swift */; };
+		6C4ADA5022293BE300BF9E8B /* DigestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0222293BE300BF9E8B /* DigestType.swift */; };
+		6C4ADA5122293BE300BF9E8B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0322293BE300BF9E8B /* Utils.swift */; };
+		6C4ADA5222293BE300BF9E8B /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0422293BE300BF9E8B /* Generics.swift */; };
+		6C4ADA5322293BE300BF9E8B /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0522293BE300BF9E8B /* Checksum.swift */; };
+		6C4ADA5422293BE300BF9E8B /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0622293BE300BF9E8B /* SHA2.swift */; };
+		6C4ADA5522293BE300BF9E8B /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0722293BE300BF9E8B /* Padding.swift */; };
+		6C4ADA5622293BE300BF9E8B /* PKCS7Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0922293BE300BF9E8B /* PKCS7Padding.swift */; };
+		6C4ADA5722293BE300BF9E8B /* PKCS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0A22293BE300BF9E8B /* PKCS5.swift */; };
+		6C4ADA5822293BE300BF9E8B /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0B22293BE300BF9E8B /* PKCS7.swift */; };
+		6C4ADA5922293BE300BF9E8B /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0C22293BE300BF9E8B /* PBKDF2.swift */; };
+		6C4ADA5A22293BE300BF9E8B /* PBKDF1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0D22293BE300BF9E8B /* PBKDF1.swift */; };
+		6C4ADA5B22293BE300BF9E8B /* BlockModeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA0F22293BE300BF9E8B /* BlockModeOptions.swift */; };
+		6C4ADA5C22293BE300BF9E8B /* CFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA1022293BE300BF9E8B /* CFB.swift */; };
+		6C4ADA5D22293BE300BF9E8B /* CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA1122293BE300BF9E8B /* CBC.swift */; };
+		6C4ADA5E22293BE300BF9E8B /* ECB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA1222293BE300BF9E8B /* ECB.swift */; };
+		6C4ADA5F22293BE300BF9E8B /* CCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA1322293BE300BF9E8B /* CCM.swift */; };
+		6C4ADA6022293BE300BF9E8B /* PCBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA1422293BE300BF9E8B /* PCBC.swift */; };
+		6C4ADA6122293BE300BF9E8B /* BlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA1522293BE300BF9E8B /* BlockMode.swift */; };
+		6C4ADA6222293BE300BF9E8B /* GCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA1622293BE300BF9E8B /* GCM.swift */; };
+		6C4ADA6322293BE300BF9E8B /* CipherModeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA1722293BE300BF9E8B /* CipherModeWorker.swift */; };
+		6C4ADA6422293BE300BF9E8B /* CTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA1822293BE300BF9E8B /* CTR.swift */; };
+		6C4ADA6522293BE300BF9E8B /* OFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA1922293BE300BF9E8B /* OFB.swift */; };
+		6C4ADA6622293BE300BF9E8B /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA1A22293BE300BF9E8B /* ChaCha20.swift */; };
+		6C4ADA6822293BE300BF9E8B /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4ADA1C22293BE300BF9E8B /* Array+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6C4AD9B722293BD200BF9E8B /* SwiftClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C4AD9BA22293BD200BF9E8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C4AD9BC22293BD200BF9E8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C4AD9BF22293BD200BF9E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C4AD9C122293BD300BF9E8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C4AD9C422293BD300BF9E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C4AD9C622293BD300BF9E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C4AD9CD22293BE300BF9E8B /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		6C4AD9CE22293BE300BF9E8B /* StreamDecryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamDecryptor.swift; sourceTree = "<group>"; };
+		6C4AD9CF22293BE300BF9E8B /* BlockEncryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockEncryptor.swift; sourceTree = "<group>"; };
+		6C4AD9D022293BE300BF9E8B /* UInt64+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UInt64+Extension.swift"; sourceTree = "<group>"; };
+		6C4AD9D122293BE300BF9E8B /* Cryptors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cryptors.swift; sourceTree = "<group>"; };
+		6C4AD9D222293BE300BF9E8B /* HKDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKDF.swift; sourceTree = "<group>"; };
+		6C4AD9D322293BE300BF9E8B /* Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cipher.swift; sourceTree = "<group>"; };
+		6C4AD9D522293BE300BF9E8B /* AEADChaCha20Poly1305.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEADChaCha20Poly1305.swift; sourceTree = "<group>"; };
+		6C4AD9D622293BE300BF9E8B /* AEAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEAD.swift; sourceTree = "<group>"; };
+		6C4AD9D722293BE300BF9E8B /* CBCMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBCMAC.swift; sourceTree = "<group>"; };
+		6C4AD9D822293BE300BF9E8B /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		6C4AD9D922293BE300BF9E8B /* AES.Cryptors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.Cryptors.swift; sourceTree = "<group>"; };
+		6C4AD9DA22293BE300BF9E8B /* Bit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bit.swift; sourceTree = "<group>"; };
+		6C4AD9DB22293BE300BF9E8B /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		6C4AD9DC22293BE300BF9E8B /* CMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMAC.swift; sourceTree = "<group>"; };
+		6C4AD9DD22293BE300BF9E8B /* UInt16+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UInt16+Extension.swift"; sourceTree = "<group>"; };
+		6C4AD9DE22293BE300BF9E8B /* Collection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		6C4AD9DF22293BE300BF9E8B /* UInt32+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UInt32+Extension.swift"; sourceTree = "<group>"; };
+		6C4AD9E022293BE300BF9E8B /* Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
+		6C4AD9E122293BE300BF9E8B /* UInt128.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UInt128.swift; sourceTree = "<group>"; };
+		6C4AD9E222293BE300BF9E8B /* Scrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrypt.swift; sourceTree = "<group>"; };
+		6C4AD9E322293BE300BF9E8B /* NoPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoPadding.swift; sourceTree = "<group>"; };
+		6C4AD9E522293BE300BF9E8B /* String+FoundationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+FoundationExtension.swift"; sourceTree = "<group>"; };
+		6C4AD9E622293BE300BF9E8B /* Blowfish+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Blowfish+Foundation.swift"; sourceTree = "<group>"; };
+		6C4AD9E722293BE300BF9E8B /* Utils+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Utils+Foundation.swift"; sourceTree = "<group>"; };
+		6C4AD9E822293BE300BF9E8B /* HMAC+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HMAC+Foundation.swift"; sourceTree = "<group>"; };
+		6C4AD9E922293BE300BF9E8B /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		6C4AD9EA22293BE300BF9E8B /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
+		6C4AD9EB22293BE300BF9E8B /* Array+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Foundation.swift"; sourceTree = "<group>"; };
+		6C4AD9EC22293BE300BF9E8B /* AES+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AES+Foundation.swift"; sourceTree = "<group>"; };
+		6C4AD9ED22293BE300BF9E8B /* Rabbit+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Rabbit+Foundation.swift"; sourceTree = "<group>"; };
+		6C4AD9EE22293BE300BF9E8B /* UInt8+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UInt8+Extension.swift"; sourceTree = "<group>"; };
+		6C4AD9EF22293BE300BF9E8B /* MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		6C4AD9F022293BE300BF9E8B /* Cryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cryptor.swift; sourceTree = "<group>"; };
+		6C4AD9F122293BE300BF9E8B /* CompactMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompactMap.swift; sourceTree = "<group>"; };
+		6C4AD9F222293BE300BF9E8B /* BatchedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchedCollection.swift; sourceTree = "<group>"; };
+		6C4AD9F322293BE300BF9E8B /* SecureBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureBytes.swift; sourceTree = "<group>"; };
+		6C4AD9F422293BE300BF9E8B /* ZeroPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeroPadding.swift; sourceTree = "<group>"; };
+		6C4AD9F522293BE300BF9E8B /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		6C4AD9F622293BE300BF9E8B /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		6C4AD9F722293BE300BF9E8B /* SHA3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA3.swift; sourceTree = "<group>"; };
+		6C4AD9F822293BE300BF9E8B /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		6C4AD9F922293BE300BF9E8B /* RandomBytesSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomBytesSequence.swift; sourceTree = "<group>"; };
+		6C4AD9FA22293BE300BF9E8B /* Rabbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rabbit.swift; sourceTree = "<group>"; };
+		6C4AD9FB22293BE300BF9E8B /* SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
+		6C4AD9FC22293BE300BF9E8B /* Poly1305.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poly1305.swift; sourceTree = "<group>"; };
+		6C4AD9FD22293BE300BF9E8B /* BlockCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockCipher.swift; sourceTree = "<group>"; };
+		6C4AD9FE22293BE300BF9E8B /* Updatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
+		6C4AD9FF22293BE300BF9E8B /* Blowfish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blowfish.swift; sourceTree = "<group>"; };
+		6C4ADA0022293BE300BF9E8B /* BlockDecryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockDecryptor.swift; sourceTree = "<group>"; };
+		6C4ADA0122293BE300BF9E8B /* StreamEncryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamEncryptor.swift; sourceTree = "<group>"; };
+		6C4ADA0222293BE300BF9E8B /* DigestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigestType.swift; sourceTree = "<group>"; };
+		6C4ADA0322293BE300BF9E8B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		6C4ADA0422293BE300BF9E8B /* Generics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
+		6C4ADA0522293BE300BF9E8B /* Checksum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checksum.swift; sourceTree = "<group>"; };
+		6C4ADA0622293BE300BF9E8B /* SHA2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA2.swift; sourceTree = "<group>"; };
+		6C4ADA0722293BE300BF9E8B /* Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
+		6C4ADA0922293BE300BF9E8B /* PKCS7Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCS7Padding.swift; sourceTree = "<group>"; };
+		6C4ADA0A22293BE300BF9E8B /* PKCS5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCS5.swift; sourceTree = "<group>"; };
+		6C4ADA0B22293BE300BF9E8B /* PKCS7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCS7.swift; sourceTree = "<group>"; };
+		6C4ADA0C22293BE300BF9E8B /* PBKDF2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBKDF2.swift; sourceTree = "<group>"; };
+		6C4ADA0D22293BE300BF9E8B /* PBKDF1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBKDF1.swift; sourceTree = "<group>"; };
+		6C4ADA0F22293BE300BF9E8B /* BlockModeOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockModeOptions.swift; sourceTree = "<group>"; };
+		6C4ADA1022293BE300BF9E8B /* CFB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFB.swift; sourceTree = "<group>"; };
+		6C4ADA1122293BE300BF9E8B /* CBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBC.swift; sourceTree = "<group>"; };
+		6C4ADA1222293BE300BF9E8B /* ECB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECB.swift; sourceTree = "<group>"; };
+		6C4ADA1322293BE300BF9E8B /* CCM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCM.swift; sourceTree = "<group>"; };
+		6C4ADA1422293BE300BF9E8B /* PCBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCBC.swift; sourceTree = "<group>"; };
+		6C4ADA1522293BE300BF9E8B /* BlockMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockMode.swift; sourceTree = "<group>"; };
+		6C4ADA1622293BE300BF9E8B /* GCM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCM.swift; sourceTree = "<group>"; };
+		6C4ADA1722293BE300BF9E8B /* CipherModeWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CipherModeWorker.swift; sourceTree = "<group>"; };
+		6C4ADA1822293BE300BF9E8B /* CTR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTR.swift; sourceTree = "<group>"; };
+		6C4ADA1922293BE300BF9E8B /* OFB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFB.swift; sourceTree = "<group>"; };
+		6C4ADA1A22293BE300BF9E8B /* ChaCha20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaCha20.swift; sourceTree = "<group>"; };
+		6C4ADA1C22293BE300BF9E8B /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C4AD9B422293BD200BF9E8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C4AD9AE22293BD200BF9E8B = {
+			isa = PBXGroup;
+			children = (
+				6C4AD9B922293BD200BF9E8B /* SwiftClient */,
+				6C4AD9B822293BD200BF9E8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C4AD9B822293BD200BF9E8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C4AD9B722293BD200BF9E8B /* SwiftClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C4AD9B922293BD200BF9E8B /* SwiftClient */ = {
+			isa = PBXGroup;
+			children = (
+				6C4AD9BA22293BD200BF9E8B /* AppDelegate.swift */,
+				6C4AD9BC22293BD200BF9E8B /* ViewController.swift */,
+				6C4AD9BE22293BD200BF9E8B /* Main.storyboard */,
+				6C4AD9CC22293BE300BF9E8B /* CryptoSwift */,
+				6C4AD9C122293BD300BF9E8B /* Assets.xcassets */,
+				6C4AD9C322293BD300BF9E8B /* LaunchScreen.storyboard */,
+				6C4AD9C622293BD300BF9E8B /* Info.plist */,
+			);
+			path = SwiftClient;
+			sourceTree = "<group>";
+		};
+		6C4AD9CC22293BE300BF9E8B /* CryptoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				6C4AD9CD22293BE300BF9E8B /* AES.swift */,
+				6C4AD9CE22293BE300BF9E8B /* StreamDecryptor.swift */,
+				6C4AD9CF22293BE300BF9E8B /* BlockEncryptor.swift */,
+				6C4AD9D022293BE300BF9E8B /* UInt64+Extension.swift */,
+				6C4AD9D122293BE300BF9E8B /* Cryptors.swift */,
+				6C4AD9D222293BE300BF9E8B /* HKDF.swift */,
+				6C4AD9D322293BE300BF9E8B /* Cipher.swift */,
+				6C4AD9D422293BE300BF9E8B /* AEAD */,
+				6C4AD9D722293BE300BF9E8B /* CBCMAC.swift */,
+				6C4AD9D822293BE300BF9E8B /* Int+Extension.swift */,
+				6C4AD9D922293BE300BF9E8B /* AES.Cryptors.swift */,
+				6C4AD9DA22293BE300BF9E8B /* Bit.swift */,
+				6C4AD9DB22293BE300BF9E8B /* HMAC.swift */,
+				6C4AD9DC22293BE300BF9E8B /* CMAC.swift */,
+				6C4AD9DD22293BE300BF9E8B /* UInt16+Extension.swift */,
+				6C4AD9DE22293BE300BF9E8B /* Collection+Extension.swift */,
+				6C4AD9DF22293BE300BF9E8B /* UInt32+Extension.swift */,
+				6C4AD9E022293BE300BF9E8B /* Digest.swift */,
+				6C4AD9E122293BE300BF9E8B /* UInt128.swift */,
+				6C4AD9E222293BE300BF9E8B /* Scrypt.swift */,
+				6C4AD9E322293BE300BF9E8B /* NoPadding.swift */,
+				6C4AD9E422293BE300BF9E8B /* Foundation */,
+				6C4AD9EE22293BE300BF9E8B /* UInt8+Extension.swift */,
+				6C4AD9EF22293BE300BF9E8B /* MD5.swift */,
+				6C4AD9F022293BE300BF9E8B /* Cryptor.swift */,
+				6C4AD9F122293BE300BF9E8B /* CompactMap.swift */,
+				6C4AD9F222293BE300BF9E8B /* BatchedCollection.swift */,
+				6C4AD9F322293BE300BF9E8B /* SecureBytes.swift */,
+				6C4AD9F422293BE300BF9E8B /* ZeroPadding.swift */,
+				6C4AD9F522293BE300BF9E8B /* String+Extension.swift */,
+				6C4AD9F622293BE300BF9E8B /* Authenticator.swift */,
+				6C4AD9F722293BE300BF9E8B /* SHA3.swift */,
+				6C4AD9F822293BE300BF9E8B /* Operators.swift */,
+				6C4AD9F922293BE300BF9E8B /* RandomBytesSequence.swift */,
+				6C4AD9FA22293BE300BF9E8B /* Rabbit.swift */,
+				6C4AD9FB22293BE300BF9E8B /* SHA1.swift */,
+				6C4AD9FC22293BE300BF9E8B /* Poly1305.swift */,
+				6C4AD9FD22293BE300BF9E8B /* BlockCipher.swift */,
+				6C4AD9FE22293BE300BF9E8B /* Updatable.swift */,
+				6C4AD9FF22293BE300BF9E8B /* Blowfish.swift */,
+				6C4ADA0022293BE300BF9E8B /* BlockDecryptor.swift */,
+				6C4ADA0122293BE300BF9E8B /* StreamEncryptor.swift */,
+				6C4ADA0222293BE300BF9E8B /* DigestType.swift */,
+				6C4ADA0322293BE300BF9E8B /* Utils.swift */,
+				6C4ADA0422293BE300BF9E8B /* Generics.swift */,
+				6C4ADA0522293BE300BF9E8B /* Checksum.swift */,
+				6C4ADA0622293BE300BF9E8B /* SHA2.swift */,
+				6C4ADA0722293BE300BF9E8B /* Padding.swift */,
+				6C4ADA0822293BE300BF9E8B /* PKCS */,
+				6C4ADA0E22293BE300BF9E8B /* BlockMode */,
+				6C4ADA1A22293BE300BF9E8B /* ChaCha20.swift */,
+				6C4ADA1C22293BE300BF9E8B /* Array+Extension.swift */,
+			);
+			path = CryptoSwift;
+			sourceTree = "<group>";
+		};
+		6C4AD9D422293BE300BF9E8B /* AEAD */ = {
+			isa = PBXGroup;
+			children = (
+				6C4AD9D522293BE300BF9E8B /* AEADChaCha20Poly1305.swift */,
+				6C4AD9D622293BE300BF9E8B /* AEAD.swift */,
+			);
+			path = AEAD;
+			sourceTree = "<group>";
+		};
+		6C4AD9E422293BE300BF9E8B /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				6C4AD9E522293BE300BF9E8B /* String+FoundationExtension.swift */,
+				6C4AD9E622293BE300BF9E8B /* Blowfish+Foundation.swift */,
+				6C4AD9E722293BE300BF9E8B /* Utils+Foundation.swift */,
+				6C4AD9E822293BE300BF9E8B /* HMAC+Foundation.swift */,
+				6C4AD9E922293BE300BF9E8B /* Data+Extension.swift */,
+				6C4AD9EA22293BE300BF9E8B /* ChaCha20+Foundation.swift */,
+				6C4AD9EB22293BE300BF9E8B /* Array+Foundation.swift */,
+				6C4AD9EC22293BE300BF9E8B /* AES+Foundation.swift */,
+				6C4AD9ED22293BE300BF9E8B /* Rabbit+Foundation.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		6C4ADA0822293BE300BF9E8B /* PKCS */ = {
+			isa = PBXGroup;
+			children = (
+				6C4ADA0922293BE300BF9E8B /* PKCS7Padding.swift */,
+				6C4ADA0A22293BE300BF9E8B /* PKCS5.swift */,
+				6C4ADA0B22293BE300BF9E8B /* PKCS7.swift */,
+				6C4ADA0C22293BE300BF9E8B /* PBKDF2.swift */,
+				6C4ADA0D22293BE300BF9E8B /* PBKDF1.swift */,
+			);
+			path = PKCS;
+			sourceTree = "<group>";
+		};
+		6C4ADA0E22293BE300BF9E8B /* BlockMode */ = {
+			isa = PBXGroup;
+			children = (
+				6C4ADA0F22293BE300BF9E8B /* BlockModeOptions.swift */,
+				6C4ADA1022293BE300BF9E8B /* CFB.swift */,
+				6C4ADA1122293BE300BF9E8B /* CBC.swift */,
+				6C4ADA1222293BE300BF9E8B /* ECB.swift */,
+				6C4ADA1322293BE300BF9E8B /* CCM.swift */,
+				6C4ADA1422293BE300BF9E8B /* PCBC.swift */,
+				6C4ADA1522293BE300BF9E8B /* BlockMode.swift */,
+				6C4ADA1622293BE300BF9E8B /* GCM.swift */,
+				6C4ADA1722293BE300BF9E8B /* CipherModeWorker.swift */,
+				6C4ADA1822293BE300BF9E8B /* CTR.swift */,
+				6C4ADA1922293BE300BF9E8B /* OFB.swift */,
+			);
+			path = BlockMode;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C4AD9B622293BD200BF9E8B /* SwiftClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C4AD9C922293BD300BF9E8B /* Build configuration list for PBXNativeTarget "SwiftClient" */;
+			buildPhases = (
+				6C4AD9B322293BD200BF9E8B /* Sources */,
+				6C4AD9B422293BD200BF9E8B /* Frameworks */,
+				6C4AD9B522293BD200BF9E8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftClient;
+			productName = SwiftClient;
+			productReference = 6C4AD9B722293BD200BF9E8B /* SwiftClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C4AD9AF22293BD200BF9E8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = comp;
+				TargetAttributes = {
+					6C4AD9B622293BD200BF9E8B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6C4AD9B222293BD200BF9E8B /* Build configuration list for PBXProject "SwiftClient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C4AD9AE22293BD200BF9E8B;
+			productRefGroup = 6C4AD9B822293BD200BF9E8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C4AD9B622293BD200BF9E8B /* SwiftClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C4AD9B522293BD200BF9E8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4AD9C522293BD300BF9E8B /* LaunchScreen.storyboard in Resources */,
+				6C4AD9C222293BD300BF9E8B /* Assets.xcassets in Resources */,
+				6C4AD9C022293BD200BF9E8B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C4AD9B322293BD200BF9E8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4ADA4B22293BE300BF9E8B /* BlockCipher.swift in Sources */,
+				6C4ADA2C22293BE300BF9E8B /* UInt16+Extension.swift in Sources */,
+				6C4ADA6122293BE300BF9E8B /* BlockMode.swift in Sources */,
+				6C4ADA3322293BE300BF9E8B /* String+FoundationExtension.swift in Sources */,
+				6C4ADA3922293BE300BF9E8B /* Array+Foundation.swift in Sources */,
+				6C4ADA5522293BE300BF9E8B /* Padding.swift in Sources */,
+				6C4ADA4822293BE300BF9E8B /* Rabbit.swift in Sources */,
+				6C4ADA5922293BE300BF9E8B /* PBKDF2.swift in Sources */,
+				6C4ADA5422293BE300BF9E8B /* SHA2.swift in Sources */,
+				6C4ADA1E22293BE300BF9E8B /* StreamDecryptor.swift in Sources */,
+				6C4ADA2E22293BE300BF9E8B /* UInt32+Extension.swift in Sources */,
+				6C4ADA4A22293BE300BF9E8B /* Poly1305.swift in Sources */,
+				6C4ADA5C22293BE300BF9E8B /* CFB.swift in Sources */,
+				6C4ADA5D22293BE300BF9E8B /* CBC.swift in Sources */,
+				6C4ADA3422293BE300BF9E8B /* Blowfish+Foundation.swift in Sources */,
+				6C4ADA5222293BE300BF9E8B /* Generics.swift in Sources */,
+				6C4ADA2422293BE300BF9E8B /* AEADChaCha20Poly1305.swift in Sources */,
+				6C4AD9BD22293BD200BF9E8B /* ViewController.swift in Sources */,
+				6C4ADA3722293BE300BF9E8B /* Data+Extension.swift in Sources */,
+				6C4ADA3822293BE300BF9E8B /* ChaCha20+Foundation.swift in Sources */,
+				6C4ADA3A22293BE300BF9E8B /* AES+Foundation.swift in Sources */,
+				6C4ADA2222293BE300BF9E8B /* HKDF.swift in Sources */,
+				6C4ADA5022293BE300BF9E8B /* DigestType.swift in Sources */,
+				6C4ADA3B22293BE300BF9E8B /* Rabbit+Foundation.swift in Sources */,
+				6C4ADA3F22293BE300BF9E8B /* CompactMap.swift in Sources */,
+				6C4ADA6822293BE300BF9E8B /* Array+Extension.swift in Sources */,
+				6C4ADA2B22293BE300BF9E8B /* CMAC.swift in Sources */,
+				6C4ADA3C22293BE300BF9E8B /* UInt8+Extension.swift in Sources */,
+				6C4ADA4D22293BE300BF9E8B /* Blowfish.swift in Sources */,
+				6C4ADA5622293BE300BF9E8B /* PKCS7Padding.swift in Sources */,
+				6C4ADA5322293BE300BF9E8B /* Checksum.swift in Sources */,
+				6C4ADA5822293BE300BF9E8B /* PKCS7.swift in Sources */,
+				6C4ADA6622293BE300BF9E8B /* ChaCha20.swift in Sources */,
+				6C4ADA5722293BE300BF9E8B /* PKCS5.swift in Sources */,
+				6C4ADA5B22293BE300BF9E8B /* BlockModeOptions.swift in Sources */,
+				6C4ADA4122293BE300BF9E8B /* SecureBytes.swift in Sources */,
+				6C4ADA4622293BE300BF9E8B /* Operators.swift in Sources */,
+				6C4ADA3022293BE300BF9E8B /* UInt128.swift in Sources */,
+				6C4ADA4C22293BE300BF9E8B /* Updatable.swift in Sources */,
+				6C4ADA2322293BE300BF9E8B /* Cipher.swift in Sources */,
+				6C4ADA1D22293BE300BF9E8B /* AES.swift in Sources */,
+				6C4ADA4922293BE300BF9E8B /* SHA1.swift in Sources */,
+				6C4ADA5F22293BE300BF9E8B /* CCM.swift in Sources */,
+				6C4ADA2522293BE300BF9E8B /* AEAD.swift in Sources */,
+				6C4ADA1F22293BE300BF9E8B /* BlockEncryptor.swift in Sources */,
+				6C4ADA2F22293BE300BF9E8B /* Digest.swift in Sources */,
+				6C4ADA3D22293BE300BF9E8B /* MD5.swift in Sources */,
+				6C4ADA3522293BE300BF9E8B /* Utils+Foundation.swift in Sources */,
+				6C4ADA3122293BE300BF9E8B /* Scrypt.swift in Sources */,
+				6C4ADA4022293BE300BF9E8B /* BatchedCollection.swift in Sources */,
+				6C4ADA6022293BE300BF9E8B /* PCBC.swift in Sources */,
+				6C4ADA4222293BE300BF9E8B /* ZeroPadding.swift in Sources */,
+				6C4ADA2822293BE300BF9E8B /* AES.Cryptors.swift in Sources */,
+				6C4ADA6222293BE300BF9E8B /* GCM.swift in Sources */,
+				6C4ADA4422293BE300BF9E8B /* Authenticator.swift in Sources */,
+				6C4ADA2D22293BE300BF9E8B /* Collection+Extension.swift in Sources */,
+				6C4ADA5E22293BE300BF9E8B /* ECB.swift in Sources */,
+				6C4ADA2722293BE300BF9E8B /* Int+Extension.swift in Sources */,
+				6C4ADA5122293BE300BF9E8B /* Utils.swift in Sources */,
+				6C4ADA2922293BE300BF9E8B /* Bit.swift in Sources */,
+				6C4ADA2622293BE300BF9E8B /* CBCMAC.swift in Sources */,
+				6C4AD9BB22293BD200BF9E8B /* AppDelegate.swift in Sources */,
+				6C4ADA4E22293BE300BF9E8B /* BlockDecryptor.swift in Sources */,
+				6C4ADA2022293BE300BF9E8B /* UInt64+Extension.swift in Sources */,
+				6C4ADA2A22293BE300BF9E8B /* HMAC.swift in Sources */,
+				6C4ADA3222293BE300BF9E8B /* NoPadding.swift in Sources */,
+				6C4ADA4522293BE300BF9E8B /* SHA3.swift in Sources */,
+				6C4ADA4F22293BE300BF9E8B /* StreamEncryptor.swift in Sources */,
+				6C4ADA2122293BE300BF9E8B /* Cryptors.swift in Sources */,
+				6C4ADA3622293BE300BF9E8B /* HMAC+Foundation.swift in Sources */,
+				6C4ADA6322293BE300BF9E8B /* CipherModeWorker.swift in Sources */,
+				6C4ADA6522293BE300BF9E8B /* OFB.swift in Sources */,
+				6C4ADA3E22293BE300BF9E8B /* Cryptor.swift in Sources */,
+				6C4ADA4322293BE300BF9E8B /* String+Extension.swift in Sources */,
+				6C4ADA6422293BE300BF9E8B /* CTR.swift in Sources */,
+				6C4ADA4722293BE300BF9E8B /* RandomBytesSequence.swift in Sources */,
+				6C4ADA5A22293BE300BF9E8B /* PBKDF1.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6C4AD9BE22293BD200BF9E8B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C4AD9BF22293BD200BF9E8B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C4AD9C322293BD300BF9E8B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C4AD9C422293BD300BF9E8B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C4AD9C722293BD300BF9E8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C4AD9C822293BD300BF9E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C4AD9CA22293BD300BF9E8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..SwiftClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C4AD9CB22293BD300BF9E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..SwiftClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C4AD9B222293BD200BF9E8B /* Build configuration list for PBXProject "SwiftClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C4AD9C722293BD300BF9E8B /* Debug */,
+				6C4AD9C822293BD300BF9E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C4AD9C922293BD300BF9E8B /* Build configuration list for PBXNativeTarget "SwiftClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C4AD9CA22293BD300BF9E8B /* Debug */,
+				6C4AD9CB22293BD300BF9E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C4AD9AF22293BD200BF9E8B /* Project object */;
+}
